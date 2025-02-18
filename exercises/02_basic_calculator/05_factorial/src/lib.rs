@@ -10,6 +10,34 @@
 //
 // Use only what you learned! No loops yet, so you'll have to use recursion!
 
+/*
+pub fn factorial(n: u32) -> u32 {
+    if n <= 1 {
+        1
+    } else {
+        n * factorial(n - 1)
+    }
+}
+*/
+
+/*
+pub fn factorial(n: u32) -> u32 {
+    match n {
+        0 => 1,
+        1 => 1,
+        _ => n * factorial(n - 1),
+    }
+}
+*/
+
+pub fn factorial(n: u32) -> u32 {
+    let mut result = 1;
+    for i in 2..=n {
+        result *= i;
+    }
+    result
+}
+
 #[cfg(test)]
 mod tests {
     use crate::factorial;
