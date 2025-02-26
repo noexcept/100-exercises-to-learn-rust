@@ -4,8 +4,11 @@
 //  Look at the compiler error to get familiar with what it looks like.
 //  Then delete the code below and move on to the next exercise.
 
+
+/* PartialEq 不是在当前crate中定义，同时u32也不是在当前crate中定义，所以不能实现PartialEq
 impl PartialEq for u32 {
     fn eq(&self, _other: &Self) -> bool {
         todo!()
     }
 }
+*/
