@@ -60,10 +60,12 @@ mod tests {
         assert_eq!(ticket.title(), "A title");
         assert_eq!(ticket.description(), "A description");
         assert_eq!(ticket.status(), "To-Do");
+        /*
         let x: &str = ticket.status();
         let xx: &String = ticket.status().into();
 
         let y: &str = ticket.description();
         let yy: &String = ticket.description();
+         */
     }
 }
